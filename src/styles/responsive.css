@@ -1,0 +1,156 @@
+.posts {
+    display: grid;
+    grid-row-gap: 16px;
+  }
+
+
+  @media screen and (max-width: 650px) {
+    .nav__list {
+      display: block;
+      position: absolute;
+      background-color: #849974;
+      color: #36384c;
+      top: 100%;
+      right: 100%;
+      width: 20rem;
+      border-radius: 10px;
+    }
+    .open {
+      top: 100px;
+      right: 0;
+    }
+    .nav__header {
+      display: flex;
+      margin-top: 14px;
+      justify-content: center;
+    }
+    .nav__item {
+      display: list-item;
+      width: 100%;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: right;
+    }
+    .hero__tagline {
+      margin-inline: 50px;
+    }
+  }
+
+
+  @media screen and (min-width: 650px) {
+    .nav {
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav__list {
+      display: flex;
+      flex: 2;
+      gap: 1rem;
+    }
+    .nav__header {
+      display: flex;
+      margin-top: 10px;
+      flex: 2;
+      justify-content: center;
+    }
+    .post-item__content {
+      padding: 16px 32px 32px 32px;
+    }
+    .post-item__title {
+      font-size: 18px;
+    }
+    .post-item__description {
+      font-size: 16px;
+    }
+    .header__menu {
+      display: none;
+    }
+  }
+
+
+  @media screen and (min-width: 700px) {
+    .nav {
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav__list {
+      display: flex;
+      flex: 2;
+    }
+    .nav__header {
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: auto;
+      flex: 2;
+      justify-content: center;
+    }
+    .posts {
+      display: grid;
+      grid-row-gap: 16px;
+      grid-column-gap: 12px;
+      grid-template-columns: 1fr 1fr;
+    }
+    .header__menu {
+      display: none;
+    }
+  }
+
+
+  @media screen and (min-width: 800px) {
+    .nav {
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav__list {
+      display: flex;
+      flex: 2;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .nav__header {
+      display: flex;
+      flex: 1.2;
+      justify-content: center;
+      margin-top: 8px;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    .nav {
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav__list {
+      display: flex;
+      flex: 2;
+    }
+    .nav__header {
+      justify-content: center;
+      margin-top: 8px;
+      display: flex;
+      flex: 2;
+    }
+    .posts {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .post-item__thumbnail {
+      max-height: 175px;
+    }
+    .post-item__city {
+      position: absolute;
+      top: 120px;
+      left: 25px;
+    }
+    .post-item__rating {
+      position: absolute;
+      top: 130px;
+      right: 25px;
+    }
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    main {
+      max-width: 1200px;
+    }
+  }
